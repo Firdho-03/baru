@@ -681,6 +681,8 @@ try {
         "\nKembalian: " + kembalianFormatted, 
         "Sukses", 
         JOptionPane.INFORMATION_MESSAGE);
+        
+         JOptionPane.showMessageDialog(this, "Transaksi Pembayaran Berhasil", "Penjualan", JOptionPane.INFORMATION_MESSAGE);
 
 
     DefaultTableModel model = (DefaultTableModel) tbl_transaksi.getModel();
@@ -721,7 +723,7 @@ try {
     } catch (NumberFormatException e) {
     JOptionPane.showMessageDialog(this, "Format angka tidak valid!", "Error", JOptionPane.ERROR_MESSAGE);
     
-    JOptionPane.showMessageDialog(this, "Transaksi Pembayaran Berhasil", "Penjualan", JOptionPane.INFORMATION_MESSAGE);
+   
     
     } catch (Exception e) {
    
